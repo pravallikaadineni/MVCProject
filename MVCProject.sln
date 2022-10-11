@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCProject", "MVCProject\MVCProject.csproj", "{A03C062E-D14B-4B80-9E76-83E9945C6151}"
+	ProjectSection(ProjectDependencies) = postProject
+		{21E320DB-A6DF-433C-8490-3445321433FA} = {21E320DB-A6DF-433C-8490-3445321433FA}
+		{422CD629-E27B-4D55-A5E1-A94DE4D22C8F} = {422CD629-E27B-4D55-A5E1-A94DE4D22C8F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL_library", "BLL_library\BLL_library.csproj", "{21E320DB-A6DF-433C-8490-3445321433FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL_library", "DAL_library\DAL_library.csproj", "{4378FDE6-1440-4C60-9472-30E73AF19BAE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{21E320DB-A6DF-433C-8490-3445321433FA} = {21E320DB-A6DF-433C-8490-3445321433FA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper_library", "Helper_library\Helper_library.csproj", "{422CD629-E27B-4D55-A5E1-A94DE4D22C8F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{21E320DB-A6DF-433C-8490-3445321433FA} = {21E320DB-A6DF-433C-8490-3445321433FA}
+		{4378FDE6-1440-4C60-9472-30E73AF19BAE} = {4378FDE6-1440-4C60-9472-30E73AF19BAE}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A03C062E-D14B-4B80-9E76-83E9945C6151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A03C062E-D14B-4B80-9E76-83E9945C6151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A03C062E-D14B-4B80-9E76-83E9945C6151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A03C062E-D14B-4B80-9E76-83E9945C6151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21E320DB-A6DF-433C-8490-3445321433FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21E320DB-A6DF-433C-8490-3445321433FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21E320DB-A6DF-433C-8490-3445321433FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21E320DB-A6DF-433C-8490-3445321433FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4378FDE6-1440-4C60-9472-30E73AF19BAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4378FDE6-1440-4C60-9472-30E73AF19BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4378FDE6-1440-4C60-9472-30E73AF19BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4378FDE6-1440-4C60-9472-30E73AF19BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{422CD629-E27B-4D55-A5E1-A94DE4D22C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{422CD629-E27B-4D55-A5E1-A94DE4D22C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{422CD629-E27B-4D55-A5E1-A94DE4D22C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{422CD629-E27B-4D55-A5E1-A94DE4D22C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EB276B9-33B6-4608-9C06-482717C1AFFF}
+	EndGlobalSection
+EndGlobal
