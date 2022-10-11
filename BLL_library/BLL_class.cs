@@ -46,7 +46,21 @@ namespace BLL_library
             get { return _section; }
             set { _section = value; }
         }
+        private int subid;
 
+        public int Subid
+        {
+            get { return subid; }
+            set { subid = value; }
+        }
+
+        private string subname;
+
+        public string Subname
+        {
+            get { return subname; }
+            set { subname = value; }
+        }
     }
 
 }

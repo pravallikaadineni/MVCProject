@@ -51,6 +51,11 @@ namespace Helper_library
         {
             return dal.classList();
         }
+        public List<BLL_class> ShowSubjectList()
+        {
+            return dal.SubjectList();
+        }
+        
     }
 }
     

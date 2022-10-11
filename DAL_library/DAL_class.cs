@@ -230,7 +230,30 @@ namespace DAL_library
             return classlist;
 
         }
+        public List<BLL_class> SubjectList()
+        {
+            SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["RainbowCnString"].ConnectionString);
 
+            SqlCommand cmdlist = new SqlCommand("select * from  [dbo].[fn_SubjectList]()", cn);
+            cn.Open();
+            SqlDataReader dr = cmdlist.ExecuteReader();
+            List<BLL_class> sublist = new List<BLL_class>();
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    BLL_class bal = new BLL_class();
+                    bal.Subid = Convert.ToInt32(dr["subid"]);
+                    bal.Subname = dr["subname"].ToString();
+
+
+                    sublist.Add(bal);
+                }
+            }
+            cn.Close();
+            cn.Dispose();
+            return sublist;
+        }
 
 
     }
